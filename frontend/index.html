@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Manual</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #sql-builder { margin: 20px 0; }
+        button { margin: 5px; }
+        #results { margin-top: 20px; padding: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>SQL Builder</h1>
+
+    <div id="sql-builder">
+        <button onclick="buildSelect()">Build SELECT</button>
+        <button onclick="buildInsert()">Build INSERT</button>
+        <button onclick="buildUpdate()">Build UPDATE</button>
+        <button onclick="buildDelete()">Build DELETE</button>
+        <button onclick="toggleLanguage()">Toggle Language</button>
+    </div>
+
+    <div>
+        <h2>SQL Display Area</h2>
+        <textarea id="sql-display" rows="4" cols="50" placeholder="Your SQL query will appear here..."></textarea>
+    </div>
+
+    <div id="results">
+        <h2>Results</h2>
+        <div id="output">Results will be displayed here...</div>
+    </div>
+
+    <script>
+        function buildSelect() {
+            document.getElementById('sql-display').value = 'SELECT * FROM table_name;';
+        }
+        function buildInsert() {
+            document.getElementById('sql-display').value = 'INSERT INTO table_name (column1, column2) VALUES (value1, value2);';
+        }
+        function buildUpdate() {
+            document.getElementById('sql-display').value = 'UPDATE table_name SET column1 = value1 WHERE condition;';
+        }
+        function buildDelete() {
+            document.getElementById('sql-display').value = 'DELETE FROM table_name WHERE condition;';
+        }
+        function toggleLanguage() {
+            // Logic for toggling language (English/Other) can be implemented here.
+            alert('Language toggled! (Functionality to be implemented)');
+        }
+    </script>
+</body>
+</html>
