@@ -1,0 +1,16 @@
+{
+  "translations": {
+    "en": {
+      "current_date_time": "Current Date and Time",
+      "note": "Note: Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted)"
+    },
+    "ja": {
+      "current_date_time": "現在の日付と時刻",
+      "note": "注: 現在の日付と時刻 (UTC - YYYY-MM-DD HH:MM:SS形式)"
+    },
+    "zh": {
+      "current_date_time": "当前日期和时间",
+      "note": "注意: 当前日期和时间 (UTC - YYYY-MM-DD HH:MM:SS 格式)"
+    }
+  }
+}
