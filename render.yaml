@@ -1,0 +1,21 @@
+# Render Deployment Configuration
+
+## Service
+name: sql-manual-running-around-in-confusion
+
+## Plan
+
+- Basic
+
+## Env
+
+- DATABASE_URL: postgres://your_user:your_password@your_host:your_port/your_database
+- OTHER_ENV_VAR: value
+
+## Build
+
+type: static
+
+## Deploy
+
+region: us-east-1
