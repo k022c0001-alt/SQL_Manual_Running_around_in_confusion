@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Node.js
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Backup files
+*~
+*.bak
+*.swp
