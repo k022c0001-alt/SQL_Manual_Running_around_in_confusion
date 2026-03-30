@@ -4,6 +4,9 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+from backend.routes import translator_bp  # noqa: E402
+app.register_blueprint(translator_bp)
+
 @app.route('/api/sql-builder', methods=['GET', 'POST'])
 def sql_builder():
     # Logic for SQL builder
